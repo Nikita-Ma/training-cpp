@@ -3,6 +3,11 @@
 //
 #include <iostream>
 
-long int i = 1;
-std::string e = "qwe";
+int main() {
+    std::string q = "qweqwe";
+    for (int i = 0; i < 10; ++i) {
+        std::cout << q << std::endl;
+    }
+
+}
 
