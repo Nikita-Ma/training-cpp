@@ -5,4 +5,6 @@
 
 long int i = 1;
 char q = 'qwe';
+char qw = 'qwe';
+char e = 'qwe';
 
