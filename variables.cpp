@@ -1,10 +1,8 @@
 //
 // Created by Nik on 23.06.2023.
 //
-
+#include <iostream>
 
 long int i = 1;
-char q = 'qwe';
-char qw = 'qwe';
-char e = 'qwe';
+std::string e = "qwe";
 
