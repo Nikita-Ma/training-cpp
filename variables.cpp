@@ -16,12 +16,22 @@ void firstFunc(int a) {
 class TestClass {
     int exampleVar;
 public:
-    void funcT();
+    int i = 1;
+
+    int funcT();
 };
 
-void TestClass::funcT() {
-    std::cout << "test" << std::endl;
+int TestClass::funcT() {
+    return 41;
 }
+
+
+class ExtendsClass : public TestClass {
+public:
+    void secondFunc() {
+        std::cout << funcT() << std::endl;
+    }
+};
 
 int main() {
 
@@ -33,8 +43,10 @@ int main() {
 //        std::cout << q << std::endl;
 //    }
 //    firstFunc(2);
-    TestClass testClass;
-    testClass.funcT();
+//    TestClass testClass;
+//    testClass.funcT();
+        ExtendsClass extendsClass;
+        extendsClass.secondFunc();
 }
 
 
